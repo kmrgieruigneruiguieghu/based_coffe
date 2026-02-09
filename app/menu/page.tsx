@@ -1,42 +1,79 @@
 import Image from "next/image";
 import Link from 'next/link';
-import time from '../public/time.jpg';
-import many_coffee from '../public/mnoga_coffee.jpg';
-import desert from '../public/desert.jpg';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#43302b] to-[#805A3C]">
+    <div className="min-h-screen bg-gradient-to-b from-[#2e211d] to-[#805A3C]">
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Наша кофейня лучше чем вы думаете и вот почему</h2>
+          <h2 className="text-3xl text-white font-bold text-center mb-12">Кофе</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group relative">
-              <div className="absolute -inset-1 rounded-3xl blur group-hover:transition-opacity duration-300"></div>
-              <div className="relative bg-[#f8f4f0] p-8 rounded-2xl border border-amber-200 shadow-lg hover:shadow-2xl transition-all
-                 duration-300 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden">
-                <div className="mb-6 overflow-hidden rounded-xl"><Image src={time} alt="." className="w-full h-48 object-cover"/></div>
-                <h3 className="text-xl text-center font-bold text-[#43302b] mb-3">График</h3>
-                <p className="text-black">Работаем с 8 утра до 11 вечера, 7 дней в неделю</p>
-              </div>
+            <div className="relative bg-[#f8f4f0] p-8 rounded-2xl border border-amber-200 shadow-lg hover:shadow-2xl transition-all
+                duration-300 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden">
+              <div className="mb-6 overflow-hidden rounded-xl"><img src="/americano.webp" alt="." className="w-full h-48 object-cover"/></div>
+              <h3 className="text-xl text-center font-bold text-[#43302b] mb-3">Американо</h3>
+              <p className="text-black mb-1">Крепкий черный кофе, но не такой концентрированный, как чистый эспрессо</p>
+              <p className="text-[#ff3300] text-xl font-bold mb-2">130 ₽</p>
+              <Link href="/menu/americano" className="inline-flex items-center bg-[#A64B00] hover:bg-[#FF7400] text-white
+                font-bold py-2 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+              Купить</Link>
             </div>
-            <div className="group relative">
-              <div className="absolute -inset-1 rounded-3xl blur group-hover:transition-opacity duration-300"></div>
-              <div className="relative bg-[#f8f4f0] p-8 rounded-2xl border border-amber-200 shadow-lg hover:shadow-2xl transition-all
-                 duration-300 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden">
-                <div className="mb-6 overflow-hidden rounded-xl"><Image src={many_coffee} alt="." className="w-full h-48 object-cover"/></div>
-                <h3 className="text-xl text-center font-bold text-[#43302b] mb-3">Разнобразное кофе</h3>
-                <p className="text-black">Капучино, латте, американо, ристретто, холодные, что вашей душе угодно</p>
-              </div>
+            <div className="relative bg-[#f8f4f0] p-8 rounded-2xl border shadow-lg hover:shadow-2xl transition-all
+                duration-300 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden">
+              <div className="mb-6 overflow-hidden rounded-xl"><img src="/cappuccino.jpg" alt="." className="w-full h-48 object-cover"/></div>
+              <h3 className="text-xl text-center font-bold text-[#43302b] mb-3">Капучино</h3>
+              <p className="text-black mb-1">Классический баланс между кофе и молоком</p>
+              <p className="text-[#ff3300] text-xl font-bold mb-2">169 ₽</p>
+              <Link href="/" className="inline-flex items-center bg-[#A64B00] hover:bg-[#FF7400] text-white
+                font-bold py-2 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+              Купить</Link>
             </div>
-            <div className="group relative">
-              <div className="absolute -inset-1 rounded-3xl blur group-hover:transition-opacity duration-300"></div>
-              <div className="relative bg-[#f8f4f0] p-8 rounded-2xl border border-amber-200 shadow-lg hover:shadow-2xl transition-all
-                 duration-300 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden">
-                <div className="mb-6 overflow-hidden rounded-xl"><Image src={desert} alt="." className="w-full h-48 object-cover"/></div>
-                <h3 className="text-xl text-center font-bold text-[#43302b] mb-3">Разнобразные десерты</h3>
-                <p className="text-black">Пирожные, печеньки, выпечка, кремовые десерты, фрукты, орехи</p>
-              </div>
+            <div className="relative bg-[#f8f4f0] p-8 rounded-2xl border shadow-lg hover:shadow-2xl transition-all
+                duration-300 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden">
+              <div className="mb-6 overflow-hidden rounded-xl"><img src="/latte.jpg" alt="." className="w-full h-48 object-cover"/></div>
+              <h3 className="text-xl text-center font-bold text-[#43302b] mb-3">Латте</h3>
+              <p className="text-black mb-1">«Кофе с молоком», мягкий, сливочный, десертный</p>
+              <p className="text-[#ff3300] text-xl font-bold mb-2">203 ₽</p>
+              <Link href="/" className="inline-flex items-center bg-[#A64B00] hover:bg-[#FF7400] text-white
+                font-bold py-2 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+              Купить</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl text-white font-bold text-center mb-12">Десерты</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="relative bg-[#f8f4f0] p-8 rounded-2xl border border-amber-200 shadow-lg hover:shadow-2xl transition-all
+                duration-300 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden">
+              <div className="mb-6 overflow-hidden rounded-xl"><img src="/croissant.jpg" alt="." className="w-full h-48 object-cover"/></div>
+              <h3 className="text-xl text-center font-bold text-[#43302b] mb-3">Круассаны с шоколадом</h3>
+              <p className="text-black mb-1">Классика с золотистой корочкой и нежным мякишем</p>
+              <p className="text-[#ff3300] text-xl font-bold mb-2">99 ₽</p>
+              <Link href="/" className="inline-flex items-center bg-[#A64B00] hover:bg-[#FF7400] text-white
+                font-bold py-2 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+              Купить</Link>
+            </div>
+            <div className="relative bg-[#f8f4f0] p-8 rounded-2xl border shadow-lg hover:shadow-2xl transition-all
+                duration-300 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden">
+              <div className="mb-6 overflow-hidden rounded-xl"><img src="/desert.jpg" alt="." className="w-full h-48 object-cover"/></div>
+              <h3 className="text-xl text-center font-bold text-[#43302b] mb-3">Пирожное с шоколадом</h3>
+              <p className="text-black mb-1">Глубокий десертный вкус для истинных ценителей сладкого</p>
+              <p className="text-[#ff3300] text-xl font-bold mb-2">228 ₽</p>
+              <Link href="/" className="inline-flex items-center bg-[#A64B00] hover:bg-[#FF7400] text-white
+                font-bold py-2 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+              Купить</Link>
+            </div>
+            <div className="relative bg-[#f8f4f0] p-8 rounded-2xl border shadow-lg hover:shadow-2xl transition-all
+                duration-300 transform hover:-translate-y-2 hover:scale-[1.02] overflow-hidden">
+              <div className="mb-6 overflow-hidden rounded-xl"><img src="/pineapple.jpg" alt="." className="w-full h-48 object-cover"/></div>
+              <h3 className="text-xl text-center font-bold text-[#43302b] mb-3">Ананас</h3>
+              <p className="text-black mb-1"> Порция свежести и тропического настроения в каждом кусочке</p>
+              <p className="text-[#ff3300] text-xl font-bold mb-2">110 ₽</p>
+              <Link href="/" className="inline-flex items-center bg-[#A64B00] hover:bg-[#FF7400] text-white
+                font-bold py-2 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+              Купить</Link>
             </div>
           </div>
         </div>

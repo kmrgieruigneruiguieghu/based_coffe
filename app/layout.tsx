@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import Link from 'next/link'
+import type { Metadata } from 'next';
+import './globals.css';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Based Coffee',
@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className="min-h-screen flex flex-col">
-        <header className="bg-[#43302B] text-white">
+        <header className="bg-gradient-to-r from-black/100 via-[#774E42] to-[#774E42] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <nav className="flex justify-between items-center">
               <Link href="/" className="text-2xl font-bold">Based Coffee</Link>
@@ -30,7 +30,7 @@ export default function RootLayout({
 
         <main className="flex-grow">{children}</main>
 
-        <footer className="bg-gradient-to-b from-[#805A3C] to-[#43302b] text-white py-20">
+        <footer className="bg-gradient-to-b from-[#805A3C] to-black text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
