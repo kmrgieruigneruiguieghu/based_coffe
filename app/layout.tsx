@@ -14,9 +14,9 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className="min-h-screen flex flex-col">
-        <header className="bg-gradient-to-r from-black/100 via-[#774E42] to-[#774E42] text-white">
+        <header className="bg-[#2E211D] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <nav className="flex justify-between items-center">
+            <div className="flex justify-between items-center">
               <Link href="/" className="text-2xl font-bold">Based Coffee</Link>
               <div className="flex space-x-10 font-medium">
                 <Link href="/" className="hover:text-[#D7D683] transition-colors duration-200">Главное</Link>
@@ -24,7 +24,7 @@ export default function RootLayout({
                 <Link href="/about" className="hover:text-[#D7D683] transition-colors duration-200">О нас</Link>
                 <Link href="/contacts" className="hover:text-[#D7D683] transition-colors duration-200">Контакты</Link>
               </div>
-            </nav>
+            </div>
           </div>
         </header>
 
