@@ -167,11 +167,11 @@ export default function ProfilePage() {
                     </div>
                     <div className="flex items-center gap-3">
                       <Github className="w-5 h-5 text-blue-400" />
-                      <p>Github: Yqw</p>
+                      <p>Github: /kmrgieruigneruiguieghu</p>
                     </div>
                     <div className="flex items-center gap-3">
                       <Calendar className="w-5 h-5 text-blue-400" />
-                      <p>Регистрация: 28.02.26</p>
+                      <p>Зарегистрирован: 28.02.26</p>
                     </div>
                     <div className="flex items-center gap-3">
                       <Youtube className="w-5 h-5 text-blue-400" />
